@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YouTube Highlight Extractor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="hero">
+        <p class="eyebrow">Native-audio analysis</p>
+        <h1>YouTube Highlight Extractor</h1>
+        <p class="intro">
+          Find complete, useful highlights and transcribe each one in its
+          original spoken language.
+        </p>
+      </header>
+
+      <section class="panel" aria-labelledby="video-form-title">
+        <h2 id="video-form-title">Analyze a video</h2>
+        <form method="post" action="{{ url_for('index') }}">
+          <label for="youtube_url">YouTube URL</label>
+          <div class="form-row">
+            <input
+              id="youtube_url"
+              name="youtube_url"
+              type="url"
+              inputmode="url"
+              placeholder="https://www.youtube.com/watch?v=..."
+              value="{{ video_url }}"
+              required
+              autocomplete="url"
+            >
+            <button type="submit">Extract highlights</button>
+          </div>
+          <p class="helper">Processed by {{ model_name }}. Longer videos can take several minutes.</p>
+        </form>
+      </section>
+
+      <section class="panel output-panel" aria-labelledby="output-title">
+        <div class="section-heading">
+          <h2 id="output-title">Backend output</h2>
+          {% if output %}<span class="status success">Complete</span>{% endif %}
+        </div>
+
+        {% if error %}
+          <p class="error" role="alert">{{ error }}</p>
+        {% endif %}
+
+        <label class="visually-hidden" for="output">Highlight JSON output</label>
+        <textarea
+          id="output"
+          readonly
+          spellcheck="false"
+          placeholder="The highlight metadata and verbatim text will appear here."
+        >{{ output }}</textarea>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+[
+  {
+    "start": 0.0,
+    "end": 20.4,
+    "text": "¿Por qué un anuncio puede tener un CTR alto y aun así no generar ventas? Porque el clic solo confirma que el anuncio despertó interés. No confirma que la oferta sea convincente, que la página elimine las dudas ni que el proceso de compra funcione correctamente."
+  },
+  {
+    "start": 20.4,
+    "end": 41.8,
+    "text": "Para encontrar el problema hay que revisar tres puntos del embudo en orden: la correspondencia entre el anuncio y la página, la capacidad de la página para convertir visitas en intención de compra y la fricción que aparece durante el pago."
+  },
+  {
+    "start": 41.8,
+    "end": 63.5,
+    "text": "El primer punto es la correspondencia. Si el anuncio promete una solución rápida y la página empieza contando la historia de la empresa, el visitante siente que llegó al lugar equivocado. El mensaje principal de la página debe continuar exactamente la promesa que produjo el clic."
+  },
+  {
+    "start": 63.5,
+    "end": 84.9,
+    "text": "Puedes comprobarlo comparando el texto del anuncio con el título principal de la página. Ambos deberían mencionar el mismo problema, el mismo tipo de cliente y el mismo resultado. Si cambia cualquiera de esos elementos, existe una ruptura de mensaje que suele reducir la conversión."
+  },
+  {
+    "start": 84.9,
+    "end": 106.6,
+    "text": "El segundo punto es la calidad de la página. Una visita no se convierte solo porque el diseño sea atractivo. La página debe explicar qué obtiene el cliente, cómo funciona la solución, por qué debería confiar en ella y qué debe hacer a continuación."
+  },
+  {
+    "start": 106.6,
+    "end": 128.7,
+    "text": "Revisa cuatro elementos concretos: una propuesta de valor comprensible en cinco segundos, beneficios vinculados con problemas reales, evidencia como testimonios o resultados verificables y una llamada a la acción visible. Si falta uno, la persona puede interesarse sin sentirse lista para comprar."
+  },
+  {
+    "start": 128.7,
+    "end": 150.2,
+    "text": "La métrica que ayuda a confirmar este problema es la tasa de avance desde la página hacia el carrito o formulario. Si muchas personas hacen clic en el anuncio pero casi ninguna inicia la compra, la falla está probablemente en el mensaje, la oferta o la confianza."
+  },
+  {
+    "start": 150.2,
+    "end": 171.9,
+    "text": "El tercer punto es la fricción durante el pago. Cuando muchas personas llegan al carrito pero pocas terminan, el anuncio ya cumplió su función y la página generó intención. En ese caso, hay que revisar lo que ocurre en los últimos pasos."
+  },
+  {
+    "start": 171.9,
+    "end": 193.8,
+    "text": "Las causas más comunes son costos inesperados, métodos de pago insuficientes, formularios demasiado largos, errores técnicos y falta de claridad sobre garantías o devoluciones. Cada campo y cada pantalla adicional crea una oportunidad para que el comprador abandone."
+  },
+  {
+    "start": 193.8,
+    "end": 215.3,
+    "text": "Haz una compra de prueba desde un teléfono usando datos móviles. Mide cuánto tarda la página, cuenta los campos obligatorios y verifica los mensajes de error. Esta prueba revela obstáculos que no aparecen cuando se revisa el sitio desde una computadora con una sesión ya iniciada."
+  },
+  {
+    "start": 215.3,
+    "end": 237.1,
+    "text": "El diagnóstico debe hacerse con porcentajes, no con impresiones. Primero mide clics que llegan a la página, después visitas que inician la compra y finalmente compras completadas. La caída más grande entre dos pasos señala el área que merece atención inmediata."
+  },
+  {
+    "start": 237.1,
+    "end": 258.6,
+    "text": "Si cien personas llegan y solo dos abren el carrito, trabaja en la página y en la oferta. Si treinta abren el carrito y solo dos pagan, trabaja en el proceso de compra. No cambies el anuncio antes de localizar la caída."
+  },
+  {
+    "start": 258.6,
+    "end": 280.4,
+    "text": "Cambia una sola variable por prueba para saber qué produjo el resultado. Puedes probar primero el título, después la evidencia y luego la llamada a la acción. Si modificas toda la página al mismo tiempo, una mejora no te enseñará qué elemento funcionó."
+  },
+  {
+    "start": 280.4,
+    "end": 301.7,
+    "text": "Un CTR alto con ventas bajas no significa automáticamente que el anuncio sea malo. Significa que existe interés antes del clic y una pérdida después. Revisa la continuidad del mensaje, la capacidad de la página para convencer y la fricción del pago, en ese orden."
+  }
+]
