@@ -14,15 +14,6 @@ from google.genai import types
 
 BASE_DIR = Path(__file__).resolve().parent
 PROMPT_PATH = BASE_DIR / "Prompt.en.md"
-MODEL_NAME = os.getenv("GEMINI_MODEL", "gemini-3.6-flash")
-VIDEO_ID_PATTERN = re.compile(r"^[A-Za-z0-9_-]{11}$")
-SCORE_WEIGHTS = {
-    "densidad": 0.30,
-    "especificidad": 0.25,
-    "demanda_busqueda": 0.20,
-    "autonomia": 0.15,
-    "apertura": 0.10,
-}
 
 
 class ProcessingError(RuntimeError):
@@ -41,9 +32,25 @@ def load_local_environment() -> None:
             continue
         key, value = line.split("=", 1)
         key = key.strip()
-        value = value.strip().strip("\"'")
+        value = value.strip()
+        if (value.startswith('"') and value.endswith('"')) or (
+            value.startswith("'") and value.endswith("'")
+        ):
+            value = value[1:-1]
         if key:
-            os.environ.setdefault(key, value)
+            os.environ[key] = value
+
+
+load_local_environment()
+MODEL_NAME = os.getenv("GEMINI_MODEL", "gemini-3.6-flash")
+VIDEO_ID_PATTERN = re.compile(r"^[A-Za-z0-9_-]{11}$")
+SCORE_WEIGHTS = {
+    "densidad": 0.30,
+    "especificidad": 0.25,
+    "demanda_busqueda": 0.20,
+    "autonomia": 0.15,
+    "apertura": 0.10,
+}
 
 
 def extract_youtube_video_id(video_url: str) -> str:
